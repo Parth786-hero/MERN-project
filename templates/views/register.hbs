@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>metaTag}}
+</head>
+<body>
+    <div class="father">
+       {{>header}}
+        <div class="register-page">
+            <h2>be my customer , </h2>
+            <form action="/register" method="POST">
+                <div class="name y">
+                    <input type="text" placeholder="enter your name here" name="username">
+                </div>
+                <div class="phone y">
+                    <input type="number" placeholder="enter your mobile number " name="number">
+                </div>
+                <div class="email y">
+                    <input type="email" placeholder="enter your email here " name="email">
+                </div>
+                <div class="gender y">
+                    <label for="male">male</label>
+                    <input type="radio" id="male" value="male" name="gender" checked>
+                    <label for="female">female</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                </div>
+                <div class="password y">
+                    <input type="password" placeholder="create your password here " name="password">
+                </div>
+                <div class="confirm-password y">
+                    <input type="password" placeholder="re write your password here" name="cpassword">
+                </div>
+                <button type="submit">add me</button>
+            </form>
+        </div>
+       {{>footer}}
+    </div>
+    <!-- <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit" , (e)=>{
+            e.preventDefault();
+            alert("Data is added successfult .")
+        })
+    </script> -->
+</body>
+</html>

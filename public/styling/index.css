@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    /* color : #2c3e50; */
+    /* color : #3d3d3d1f; */
+    color: #2f3640;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    /* background-color: rgba(128, 128, 128, 0.095); */
+    /* background-color: #f5f6fa; */
+    /* z-index: -5; */
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size : 12px;
+    font-weight: 400;
+}
+.father{
+    width:100%;
+    min-height : 100vh;
+    padding : 5px 120px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* z-index:5; */
+}
+.logo{
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.013);
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* animation: animate2 1s alternate-reverse ease-in-out forwards infinite; */
+}
+@keyframes animate2 {
+    0%{
+        transform:rotate(-4deg);
+    }
+    100%{
+        transform: rotate(4deg);
+    }
+}
+.nav-bar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top : 40px;
+}
+.nav-items{
+    display: flex;
+    /* border : 2px solid red; */
+    margin-right : 88px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08); */
+
+}
+li{
+    /* border: 2px solid red; */
+    /* margin: 0 18px; */
+    padding: 5px 15px;
+    /* margin-right : 18px; */
+}
+.main-content{
+    /* border : 2px solid red; */
+    padding : 30px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top:90px;
+    padding-top: 60px;;
+}
+.section1{
+    /* border : 2px solid orange; */
+    width:55%;
+
+}
+.section1 h1{
+    letter-spacing: 2px;
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: 300;
+    /* border : 2px solid green; */
+    width : 85%;
+}
+.section1 p{
+    margin:9px 0;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;
+    width : 94%;
+}
+.section2{
+    /* border : 2px solid blue; */
+    height : 370px;
+    /* padding : 25px; */
+    padding-bottom: 38px;
+    width : 35%;
+    overflow: hidden;
+    object-fit: cover;
+    animation: animate 2s alternate infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.9);
+    }
+}
+.section2 img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.btns{
+    /* border : 2px solid red; */
+    width : 35%;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin : 15px 0;
+
+}
+.btns button{
+    border:none;
+    outline: none;
+    padding : 10px 25px;
+    background-color: #3d3d3d;
+    color : white;
+    border-radius: 5px;
+}
+.btns a{
+    color : white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 14px;
+}
+.about-page{
+    /* border : 2px solid red; */
+    margin-top: 100px;
+    width : 95%;
+    height : 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-page .info-x{
+    width : 23%;
+    height : 270px;
+    /* border : 2px solid orange; */
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 35px;
+    animation: animate 2s alternate infinite;
+}
+.about-page .info-x img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.about-page .info2{
+    height : 100%;
+    padding : 8px 18px;
+    /* border : 2px solid black; */
+    /* border-radius: 15px; */
+    border-top: 3px solid #2f3640;
+    border-bottom: 3px solid #2f3640;
+    width : 35%;
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.088); */
+}
+.info2 .field{
+    /* text-align: center; */
+    margin: 25px;
+}
+.info2 .field p{
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin:8px;
+} 
+.login-box{
+    /* border : 2px solid red; */
+    height : 420px;
+    margin-top:90px;
+    width : 92%;
+    display: flex;
+    justify-content: space-between;
+}
+.sec1{
+    /* border : 2px solid green; */
+    height : 100%;
+    width : 40%;
+    padding: 35px;
+}
+.sec1 img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: center;
+    /* width : 40%; */
+}
+.sec2{
+    /* border: 2px solid red; */
+    width : 40%;
+    text-align: center; 
+    padding : 15px 0;
+    text-align: center;
+}
+.login-box form{
+    /* border : 2px solid red; */
+    padding : 25px 0;
+    text-align: center;
+    
+}
+.login-box label{
+    display: block;
+    position: absolute;
+    left : 60px;
+    font-size: 25px;
+    top:13px;
+}
+.login-box .x{
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.login-box input{
+    border : 2px solid #2f3640;
+    border-radius: 5px;
+    /* height : 25px; */
+    padding : 15px 55px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 300;
+    font-size: 16px;
+    display : block;
+    width : 80%;
+    transition: all .1s ease-in-out;
+}
+.login-box input:focus{
+    border-width: 3px;
+}
+.login-box button{
+    border : 2px solid #2f3640;
+    border-radius: 5px;
+    /* height : 25px; */
+    padding : 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 300;
+    font-size: 16px;
+    /* display : block; */
+    width : 80%;
+    background-color: #2f3640;
+    color : white;
+    cursor: pointer;
+}
+.register-page{
+    /* border : 2px solid red; */
+    width : 92%;
+    text-align: center;
+    margin-top:35px;
+    padding : 15px 0;
+}
+.register-page h2{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.register-page form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-page .y{
+    margin : 13px 0;
+    /* border: 2px solid green; */
+    width : 40%;
+}
+.register-page .gender{
+    display: flex;
+    width : 25%;
+    margin-left : -175px;
+    /* border: 2px solid red;; */
+}
+.register-page input{
+    width : 100%;
+    padding : 12px;
+    border: 2px solid #2f3640;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight : 400;
+    font-size: 16px;
+}
+.register-page input:focus{
+    border-width:3px ;
+}
+.register-page button{
+    width : 40%;
+    padding : 14px;
+    /* border: 2px solid #2f3640; */
+    background-color: #2f3640;
+    color : white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight : 400;
+    font-size: 16px;
+    margin-top:15px;
+    cursor:pointer;
+}
+.message{
+    text-align: center;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.message h1{
+    font-size: 62px;
+    line-height: 85px;
+    letter-spacing: 1px;
+}
+.message button{
+    display: block;
+    margin-top: 45px;
+    border : none;
+    outline : none;
+    background-color: #2f3640;
+    color : white;
+    border-radius: 5px;
+    padding : 14px 35px;
+}
+.message a{
+    color : white;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.footer{
+    margin-top : auto;
+    /* background-color: #2f3640; */
+    padding : 25px 0;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    /* color: white; */
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    word-spacing: 2px;
+    font-size:14px;
+}
+.footer .icons{
+    /* border : 2px solid red; */
+    padding-top: 5px;
+    width : 40%;
+    margin-top : 8px;
+}
+.footer i{
+    display: inline-block;
+    margin : 0 15px;
+    cursor: pointer;
+    font-size: 28px;
+}
+.message{
+    /* border : 2px solid red; */
+    text-align: center;
+    margin-top: 200px;
+}
+.message h2{
+    font-size: 98px;
+}
+.message p{
+    line-height: 42px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 38px;
+}

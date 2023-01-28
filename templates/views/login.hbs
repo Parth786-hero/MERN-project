@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>metaTag}}
+</head>
+<body>
+    <div class="father">
+        {{>header}}
+
+        <div class="login-box">
+            <div class="sec1">
+                <img src="./images/profile.svg" alt="sample image">
+            </div>
+            <div class="sec2">
+                <h2>get connected</h2>
+                <form action="/login" method = "POST">
+                    <div class="name x">
+                        <label for="name"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id = "name" placeholder="enter your name here" name="username">
+                    </div>
+                    <div class="password x">
+                        <label for="password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id = "password" placeholder="enter your password here" name="password">
+                    </div>
+                    <button type="submit">log in</button>
+                </form>
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+</body>
+</html>
